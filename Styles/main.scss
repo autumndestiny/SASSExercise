@@ -1,0 +1,41 @@
+// 5
+@import "values";
+// 1
+.main {
+    background: tan;
+    // 3
+    h1 {
+        @include flex (flex-start, center)
+        color: #ddd;
+        // Bonus 1
+        &:hover {
+            text-decoration: underline;
+            @extend %center;
+        }
+    }
+    // 7
+    h2 {
+        background-color: $brown1;
+    }
+    h3 {
+       color: $brown1; 
+    }
+}
+// 8
+.minor {
+    background: silver;
+    // 9
+    h1 {
+        text-decoration: underline;
+        // 12
+        @extend %center;
+        margin-bottom: 25px * 4;
+    }
+    // 10
+    h2 {
+        text-decoration: line-through;
+        // 12
+        @extend %center;
+    }
+
+}
